@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* ......................... Title Section .................................... */
+#landingSection {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(6deg, #081821 70%,#624b3c);
+}
+
+#landingSection > #container {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    width: 90%;
+    background-image: url("../images/dark\ cloud.jpg");
+    background-size: cover;
+    background-position: cover cover;
+    position: relative;
+   
+}
+
+#landingSection > #container > #titleSection {
+    position: relative;
+    color: #f2f2f1;
+    flex: 3;
+}
+
+#landingSection > #container > #titleSection > p {
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   font-weight: 500;
+   font-size: 0.7rem;
+}
+
+#landingSection > #container > #titleSection > .wrapper {
+    position:absolute;
+    bottom: 5rem;
+    left: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+#landingSection > #container > #titleSection > .wrapper > .degree {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+#landingSection > #container > #titleSection > .wrapper > .cityDate > .cityName {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    
+}
+
+#landingSection > #container > #titleSection > .wrapper > .cityDate > .day {
+    font-size: 0.9rem;
+}
+
+#landingSection > #container > #titleSection > .weatherDescription{
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    border-radius: 0.5em;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(2, 34, 53, 0.3);
+    bottom: 22%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: none;
+    
+
+}
+
+#landingSection > #container > #titleSection > .weatherDescription h1,h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    opacity: 0.7;
+    color: #fcfdfd;
+}
+
+#landingSection > #container > #titleSection > .weatherDescription h1 {
+    
+    font-size: 1.3rem;
+}
+
+/* ......................... Info Section .................................... */
+
+#landingSection > #container > #infoSection {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    height: 100%;
+    color: #fcfdfd;
+    position: relative;
+    background-color: rgba(2, 34, 53, 0.7);
+}
+
+#landingSection > #container > #infoSection > #form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#landingSection > #container > #infoSection > #form > .location {
+    padding: 0.5rem 2.5rem 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid #9e9ea7;
+    background-color: transparent;
+    outline: none;
+    color: #fcfdfd;
+    
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+
+#landingSection > #container > #infoSection > #form > .submit {
+    cursor: pointer;
+    padding:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #d66c05;
+    font-size: 1.4rem;
+    font-weight: 100;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+}
+
+#landingSection > #container > #infoSection > #form > .submit:hover {
+    opacity: 1;
+    transition: all ease-in-out;
+    font-size: 1.5rem;
+}
+
+
+#landingSection > #container > #infoSection > .cities {
+    margin-bottom: 1rem;
+  
+}
+
+#landingSection > #container > #infoSection > .cities > h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
+
+#landingSection > #container > #infoSection > .cities > h3:hover {
+    transition: all ease-in-out;
+    font-weight: 500;
+    opacity: 0.8;
+    background-color: rgba(27, 84, 118, 0.7);
+
+}
+
+hr {
+  color: #9e9ea7;
+  margin-bottom: 1rem;
+}
+
+#landingSection > #container > #infoSection > .weatherDetails > .weatherDetailsTitle{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+#landingSection > #container > #infoSection > .weatherDetails > .details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#landingSection > #container > #infoSection > .weatherDetails > .details > p {
+    opacity: 0.9;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 480px) {
+   
+    #landingSection > #container {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    #landingSection > #container > #titleSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    #landingSection > #container > #titleSection > p {
+        display: none;
+     }
+ 
+     #landingSection > #container > #titleSection > .wrapper  {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    
+    #landingSection > #container > #titleSection > .wrapper > img {
+        position:absolute;
+        left: 60%;
+        top: -10%;
+    }
+ 
+    
+    #landingSection > #container > #infoSection {
+        position:unset;
+       
+    }
+    
+    #landingSection > #container > #infoSection > #form {
+        position: absolute;
+        top: 2%;
+        width: 90%;
+    }
+  
+    #landingSection > #container > #infoSection > #form > .location {
+        padding: 0.5rem 2.5rem 0.5rem 0;
+        border: none;
+        border-bottom: 1px solid #9e9ea7;
+        background-color: transparent;
+        outline: none;
+        color: #fff;
+        
+    }
+    
+    ::placeholder {
+        opacity: 1;
+        color: #fcfdfd;
+    }
+
+    #landingSection > #container > #infoSection > #form > .submit {
+        padding:1rem;
+        position: relative;
+        
+    }
+
+
+    #landingSection > #container > #infoSection {
+       
+        flex-direction:column-reverse;
+        
+    }
+    
+
+ 
+ 
+ }
